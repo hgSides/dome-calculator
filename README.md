@@ -29,7 +29,7 @@ Testing with actual values from a game, displayed here:
 The values should coincide with the given formula of (100 * passed)+(100 * days)+(500 * arenas)+(1000 * kill)+{if winner:1500}.  I'm not sure how you count a day survived, if it means they clear both DayX and NightX, or that they reach DayX, but the given data in the field adds up the way it should, at a glance.  Let me know if it's wrong and I'll adjust it.
 
 # Further Plans for Development
-* A _sortBy_ function to adjust score list based on scores < -> >.
+* A _sortBy_ function to adjust score list based on scores _greatest to least_.
 * Support for saved scores.
 * Support for uploading raw text scores.
 * Support for automation of at least some input fields.
