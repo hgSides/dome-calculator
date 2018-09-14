@@ -28,37 +28,37 @@ function buildForm(target, trib) {
 	
 	var f = document.createElement("form");
 	f.setAttribute('method', 'get');
-	f.id = "form"+trib;
+	f.id = target+"form"+trib;
 	
 	var tName = document.createElement("input");
 	tName.type = "text";
 	tName.name = "t_Name";
-	tName.id = "t_Name"+trib;
+	tName.id = target+"t_Name"+trib;
 	
 	var tPlace = document.createElement("input");
 	tPlace.type = "number";
 	tPlace.name = "t_Place";
-	tPlace.id = "t_Place"+trib;
+	tPlace.id = target+"t_Place"+trib;
 	
 	var tDays = document.createElement("input");
 	tDays.type = "number";
 	tDays.name = "t_Days";
-	tDays.id = "t_Days"+trib;
+	tDays.id = target+"t_Days"+trib;
 	
 	var tKills = document.createElement("input");
 	tKills.type = "number";
 	tKills.name = "t_Kills";
-	tKills.id = "t_Kills"+trib;
+	tKills.id = target+"t_Kills"+trib;
 	
 	var tArenas = document.createElement("input");
 	tArenas.type = "number";
 	tArenas.name = "t_Arenas";
-	tArenas.id = "t_Arenas"+trib;
+	tArenas.id = target+"t_Arenas"+trib;
 	
 	var tScore = document.createElement("input");
 	tScore.type = "number";
 	tScore.name = "t_Score";
-	tScore.id = "t_Score"+trib;
+	tScore.id = target+"t_Score"+trib;
 	
 	addLabel(f, f.id, "Entry "+(trib+1))
 	addLabel(f, tName.id, "Name");
@@ -91,7 +91,7 @@ function returnLanding(page){
 };
 
 function getSize(evt, numbers) {
-	var i = 0;
+
 	var form = document.getElementById(numbers);
 	
 	document.getElementById("log").innerHTML = numbers;
@@ -161,11 +161,11 @@ function submission(field, save) {
 
 function calculate(i, target, size) {
 
-	var name = "t_Name"+i;
-	var place = "t_Place"+i;
-	var days = "t_Days"+i;
-	var kills = "t_Kills"+i;
-	var arenas = "t_Arenas"+i;
+	var name = size+"t_Name"+i;
+	var place = size+"t_Place"+i;
+	var days = size+"t_Days"+i;
+	var kills = size+"t_Kills"+i;
+	var arenas = size+"t_Arenas"+i;
 
 	var nameF = document.getElementById(name);
 	var placeF = document.getElementById(place);	
@@ -186,12 +186,12 @@ function getTributes(obj) {
 	
 		for (i = 0; i < 24; i++) {
 			
-			var name = "t_Name"+i;
-			var place = "t_Place"+i;
-			var days = "t_Days"+i;
-			var kills = "t_Kills"+i;
-			var arenas = "t_Arenas"+i;
-			var score = "t_Score"+i;
+			var name = "24t_Name"+i;
+			var place = "24t_Place"+i;
+			var days = "24t_Days"+i;
+			var kills = "24t_Kills"+i;
+			var arenas = "24t_Arenas"+i;
+			var score = "24t_Score"+i;
 			var nameF = document.getElementById(name);
 			var placeF = document.getElementById(place);	
 			var daysF = document.getElementById(days);	
@@ -199,11 +199,11 @@ function getTributes(obj) {
 			var arenasF = document.getElementById(arenas);
 			var scoreF = document.getElementById(score);
 	
-			submission(nameF, "nameF"+i);
-			submission(placeF, "placeF"+i);
-			submission(daysF, "daysF"+i);
-			submission(killsF, "killsF"+i);
-			submission(arenasF, "arenasF"+i);
+			submission(nameF, "24nameF"+i);
+			submission(placeF, "24placeF"+i);
+			submission(daysF, "24daysF"+i);
+			submission(killsF, "24killsF"+i);
+			submission(arenasF, "24arenasF"+i);
 			calculate(i, scoreF, 24);
 	
 		}
@@ -213,12 +213,12 @@ function getTributes(obj) {
 
 			for (i = 0; i < 36; i++) {
 				
-				var name = "t_Name"+i;
-				var place = "t_Place"+i;
-				var days = "t_Days"+i;
-				var kills = "t_Kills"+i;
-				var arenas = "t_Arenas"+i;
-				var score = "t_Score"+i;
+				var name = "36t_Name"+i;
+				var place = "36t_Place"+i;
+				var days = "36t_Days"+i;
+				var kills = "36t_Kills"+i;
+				var arenas = "36t_Arenas"+i;
+				var score = "36t_Score"+i;
 				var nameF = document.getElementById(name);
 				var placeF = document.getElementById(place);	
 				var daysF = document.getElementById(days);	
@@ -226,11 +226,11 @@ function getTributes(obj) {
 				var arenasF = document.getElementById(arenas);
 				var scoreF = document.getElementById(score);
 		
-				submission(nameF, "nameF"+i);
-				submission(placeF, "placeF"+i);
-				submission(daysF, "daysF"+i);
-				submission(killsF, "killsF"+i);
-				submission(arenasF, "arenasF"+i);
+				submission(nameF, "36nameF"+i);
+				submission(placeF, "36placeF"+i);
+				submission(daysF, "36daysF"+i);
+				submission(killsF, "36killsF"+i);
+				submission(arenasF, "36arenasF"+i);
 				calculate(i, scoreF, 36);
 				
 			}
@@ -240,12 +240,12 @@ function getTributes(obj) {
 		
 			for (i = 0; i < 48; i++) {
 				
-				var name = "t_Name"+i;
-				var place = "t_Place"+i;
-				var days = "t_Days"+i;
-				var kills = "t_Kills"+i;
-				var arenas = "t_Arenas"+i;
-				var score = "t_Score"+i;
+				var name = "48t_Name"+i;
+				var place = "48t_Place"+i;
+				var days = "48t_Days"+i;
+				var kills = "48t_Kills"+i;
+				var arenas = "48t_Arenas"+i;
+				var score = "48t_Score"+i;
 				var nameF = document.getElementById(name);
 				var placeF = document.getElementById(place);	
 				var daysF = document.getElementById(days);	
@@ -266,11 +266,11 @@ function getTributes(obj) {
 		
 };
 
-function buildList(i, target) {
+function buildList(i, target, number) {
 
-	var name = "t_Name"+i;
+	var name = number+"t_Name"+i;
 	var nameF = document.getElementById(name);
-	var score = "t_Score"+i;
+	var score = number+"t_Score"+i;
 	var scoreF = document.getElementById(score);
 	
 	var item = document.createElement("li");
@@ -295,7 +295,7 @@ function getScores(obj) {
 		
 		output.appendChild(list);
 		for (i = 0; i< 24; i++) {
-			buildList(i, "scores");
+			buildList(i, "scores", obj);
 		}
 	}
 	
@@ -309,7 +309,7 @@ function getScores(obj) {
 		
 		output.appendChild(list);
 		for (i = 0; i< 36; i++) {
-			buildList(i, "scores");
+			buildList(i, "scores", obj);
 		}
 	}
 	
@@ -323,7 +323,7 @@ function getScores(obj) {
 		
 		output.appendChild(list);
 		for (i = 0; i< 48; i++) {
-			buildList(i, "scores");
+			buildList(i, "scores", obj);
 		}
 	}
 };	
