@@ -18,7 +18,7 @@ After inputting the necessary data, pressing the "Process Tributes" button (in g
 ![image dome3](https://i.imgur.com/0xGvXEi.png)
 
 As seen here.  After calculation, retrieval of raw text is possible by pressing the 'Get Their Scores' button, which will then output the scores in an expected format of:
-#: (NAME) : (SCORE)
+**#: (NAME) : (SCORE)**
 
 ![image dome4](https://i.imgur.com/hNF2zev.png)
 
