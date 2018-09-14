@@ -1,8 +1,8 @@
-# Access the Calculator Here
-[Calculator](https://hgsides.github.io/dome-calculator/scorecalc.html)
-
 # Using the Calculator.
 It's pretty easy-peasy.
+
+## Access the Calculator Here
+[Calculator](https://hgsides.github.io/dome-calculator/scorecalc.html)
 
 You'll land on a selection page for the 3 sizes.
 
