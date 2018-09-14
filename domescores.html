@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+	<body>
+
+		<div class="wrapper">
+
+			<div class="bumper">
+				<span class="head"><h2>Errors!</h2></span>
+				<span id="log"></span>
+			</div>
+			
+			<div class="center">
+				<span class="head"><h1>Dome Scores</h1></span>
+
+				<div class="buttons" id="selection">
+					<button type="button" class="selector" value="24" onclick="getSize(event, this.value)">
+						24
+					</button>
+					<button type="button" class="selector" value="36" onclick="getSize(event, this.value)">
+						36
+					<button type="button" class="selector" value="48" onclick="getSize(event, this.value)">
+						48
+					</button>
+				</div>
+				
+				<div class="forms" id="24">
+				</div>
+				
+				<div class="forms" id="36">
+				</div>
+				
+				<div class="forms" id="48">
+				</div>
+							
+			</div>
+			
+			<div class="bumper">
+				<span class="head"><h2>Output!</h2></span>
+				<div class="output">
+				</div>
+				<button id="process" type="button" value="0" onclick="getTributes(this.value)">Process Tributes</button>
+				<button id="retrieve" type="button" value="0" onclick="getScores(this.value)">Get Their Scores</button>
+			</div>
+
+		</div>
+			
+	<script type="text/javascript" src="main.js"></script>
+	
+	</body>
+
+</html>
+
