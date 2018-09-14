@@ -91,6 +91,7 @@ function returnLanding(page){
 };
 
 function getSize(evt, numbers) {
+	var i = 0;
 	var form = document.getElementById(numbers);
 	
 	document.getElementById("log").innerHTML = numbers;
