@@ -13,7 +13,7 @@ E.g.: A 24-person game.  Tribute 'Foo' is the winner, with a placement of 1; 24-
 
 ![image dome2](https://i.imgur.com/9URTFtG.png)
 
-After injecting the necessary data, pressing the "Process Tributes" button (in green) will calculate the stores and inject that value into the 'Scores' input.  
+After inputting the necessary data, pressing the "Process Tributes" button (in green) will calculate the stores and inject that value into the 'Scores' input.  
 
 ![image dome3](https://i.imgur.com/0xGvXEi.png)
 
