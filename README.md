@@ -1,3 +1,6 @@
+# Access the Calculator Here
+[Calculator](https://hgsides.github.io/dome-calculator/scorecalc.html)
+
 # Using the Calculator.
 It's pretty easy-peasy.
 
